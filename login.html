@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Website</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <!-- TAILWINDCSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- IKON -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <!-- INTERNAL CSS -->
+    <link rel="stylesheet" href="./asset/css/app.css" />
+</head>
+<body class="bg-black text-white">
+    <!-- START : NAVBAR -->
+    <nav class="w-full fixed top-0 left-0 z-50 font-inter p-4">
+        <div class="w-full max-w-screen-xl mx-auto flex items-center justify-between">
+            <img src="./asset/images/main-logo.png" alt="" class="h-16" />
+            <!-- NAV LIST -->
+            <ul class="flex items-center space-x-3">
+                <li>
+                    <a href="#" class="text-xs uppercase">Help</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END : NAVBAR -->
+
+    <!-- START : HERO SECTION -->
+    <header class="relative w-full md:max-h-[900px] flex items-center font-inter overflow-hidden px-4 py-48 md:py-56">
+        <img src="./asset/images/header-bg.svg" alt="" class="w-full absolute top-0 right-0 -z-10" />
+        <div class="w-full max-w-screen-lg mx-auto flex justify-center items-center space-y-3">
+            <!-- FORM -->
+            <div class="w-full max-w-lg mx-auto bg-white text-black text-center shadow-lg rounded-2xl md:rounded-3xl px-5 py-8 md:p-10 lg:p-20">
+                <h1 class="text-xl md:text-3xl">Let's get started!</h1>
+                <p class="text-sm md:text-base">Begin with creating new free account. This helps you keep your learning way easier.</p>
+                <div class="w-full space-y-3 py-3 pt-5">
+                    <a href="/create-with-email.html" class="w-full flex justify-center items-center text-sm md:text-base transition-all duration-300 bg-zinc-200 hover:bg-zinc-300 rounded-lg p-3">Continue With Email</a>
+                    <p>or</p>
+                    <a href="#" class="w-full flex justify-center items-center space-x-2 text-sm md:text-base bg-white border border-zinc-300 rounded-lg p-3">
+                        <iconify-icon icon="duo-icons:apple" width="22" height="22"></iconify-icon>
+                        <span>Continue With Apple</span>
+                    </a>
+                    <a href="#" class="w-full flex justify-center items-center space-x-2 text-sm md:text-base bg-white border border-zinc-300 rounded-lg p-3">
+                        <iconify-icon icon="devicon:google" class="w-5"></iconify-icon>
+                        <span>Continue With Google</span>
+                    </a>
+                    <p class="text-sm md:text-base">By continuing, you agree to our <a href="" class="underline hover:text-zinc-500">Privacy Policy</a> and <a href="" class="underline hover:text-zinc-500">Terms and Conditions</a></p>
+                    <p class="text-sm md:text-base">Already have an account? <a href="/login.html" class="underline hover:text-zinc-500">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END : HERO SECTION -->
+
+    <!-- START : FOOTER -->
+    <footer class="w-full bg-white">
+        <div class="w-full max-w-screen-xl mx-auto px-4 py-10">
+            <!-- LOGO -->
+            <div class="w-full flex flex-col justify-center items-center space-y-5">
+                <img src="./asset/images/main-logo.png" alt="" class="h-20" />
+                <!-- MENU LIST -->
+                <ul class="flex space-x-5 text-black py-3">
+                    <li>
+                        <a href="" class="hover:text-zinc-500">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-zinc-500">Timetable</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-zinc-500">Classess</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-zinc-500">Inbox</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-zinc-500">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-zinc-500">Support</a>
+                    </li>
+                </ul>
+                <!-- BOTTOM -->
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-0 items-end">
+                    <!-- LEFT FORM -->
+                    <form action="#" method="POST" class="w-full">
+                        <label for="subscribe" class="text-sm text-zinc-500 mb-2">Newsletter</label>
+                        <div class="relative w-full h-10 md:h-12">
+                            <input type="text" id="subscribe" placeholder="Enter your email" class="w-full h-full flex rounded-full text-sm text-black border px-4" />
+                            <button class="absolute top-0 right-0 w-32 h-full text-sm bg-black text-white text-center rounded-full">Subscribe</button>
+                        </div>
+                    </form>
+                    <!-- CENTER SOSMED -->
+                    <div class="w-full flex md:justify-end md:items-end space-x-3">
+                        <a href="#" class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#" class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#" class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#" class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                    </div>
+                    <!-- RIGHT COPYRIGHT -->
+                    <div class="w-full flex md:justify-end text-black md:col-span-2 lg:col-span-1 md:pt-10 lg:pt-0">
+                        <p class="text-sm text-end">©  2025 copyright. All right reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END : FOOTER -->
+
+    <!-- SCRIPT -->
+    <script>
+        
+    </script>
+</body>
+</html>
