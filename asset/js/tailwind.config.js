@@ -9,7 +9,7 @@ tailwind.config = {
             colors: {
                 gray: {
                     primary: '#0B0B0B',
-                    secondary: '#181A1C',
+                    secondary: '#232323',
                 }
             }
         }
