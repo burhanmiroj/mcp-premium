@@ -10,3 +10,7 @@
         transform: translateX(102.5%);
     }
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+}
