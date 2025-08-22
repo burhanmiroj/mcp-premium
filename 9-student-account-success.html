@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Website</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <!-- TAILWINDCSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- IKON -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <!-- INTERNAL CSS -->
+    <link rel="stylesheet" href="./asset/css/app.css" />
+</head>
+<body class="bg-black text-white">
+    <!-- START : NAVBAR -->
+    <nav class="w-full fixed top-0 left-0 z-50 font-inter p-4">
+        <div class="w-full max-w-screen-xl mx-auto flex items-center justify-between">
+            <img src="./asset/images/main-logo.png" alt="" class="h-16" />
+            <!-- NAV LIST -->
+            <ul class="flex items-center space-x-3">
+                <li>
+                    <a href="#" class="text-xs uppercase">Help</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END : NAVBAR -->
+
+    <!-- START : HERO SECTION -->
+    <header class="relative w-full md:max-h-[900px] flex items-center font-inter overflow-hidden px-4 py-48 md:py-56">
+        <img src="./asset/images/header-bg.svg" alt="" class="w-full absolute top-0 right-0 -z-10" />
+        <div class="w-full max-w-screen-lg mx-auto flex justify-center items-center space-y-3">
+            <!-- FORM -->
+            <div class="w-full max-w-lg mx-auto bg-white text-black text-center shadow-lg rounded-2xl md:rounded-3xl px-5 py-8 md:p-10 lg:p-20">
+                <div class="flex justify-center py-5">
+                    <div class="w-20 h-20 flex justify-center items-center bg-black rounded-full ring-8 ring-zinc-300">
+                        <svg width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36.1375 10.874L30.5827 12.9299C30.3918 15.4722 30.8415 17.9679 30.0666 20.4415C27.0982 29.921 13.2252 30.0323 10.0825 20.5982C9.24247 18.0778 9.70883 15.5272 9.51647 12.9299L1.57183 9.8997C0.351275 9.24694 0.426002 7.46317 1.72958 6.96433L19.5286 0.328125L20.6523 0.348739L38.7239 7.12649C39.2484 7.50028 39.4075 7.93042 39.4615 8.55569C39.2262 12.3665 39.7618 16.5194 39.4615 20.2903C39.3521 21.6549 38.1953 22.7818 36.8681 21.927C36.691 21.813 36.1361 21.1712 36.1361 21.0063V10.874H36.1375ZM33.0224 8.4059L20.006 3.67852L7.07537 8.45675L20.0849 13.3188C24.1852 11.6628 28.4295 10.3381 32.5312 8.68762C32.6709 8.63128 32.9989 8.56119 33.0238 8.4059H33.0224ZM27.2117 14.1653C24.79 14.9349 22.4706 16.0645 20.0157 16.6981L12.8889 14.1653V18.332C12.8889 18.8886 13.5352 20.3645 13.8438 20.884C16.6363 25.5976 23.6386 25.5289 26.3316 20.7521C26.6111 20.256 27.2117 18.8529 27.2117 18.3334V14.1667V14.1653Z" fill="white"/><path d="M36.5887 46.9438C36.3437 46.7143 36.1735 46.3351 36.1375 46.0025C35.9728 44.4922 36.2538 42.7084 36.1417 41.1638C35.8787 37.5317 32.79 34.8409 29.6694 33.3829C29.0716 33.1039 27.2878 32.3467 26.7177 32.2848C26.6015 32.2725 26.5157 32.2725 26.4299 32.3645C25.1207 33.5038 23.9223 35.1007 22.5897 36.1753C21.7829 36.8253 20.7395 37.1977 19.6878 37.1029C17.2453 36.883 15.3854 33.6742 13.5421 32.2848C9.40719 33.3004 4.31603 36.4378 3.96453 41.0662C3.85244 42.549 4.21778 44.8632 3.93963 46.1853C3.62826 47.6653 1.27849 47.8934 0.776158 46.2815C0.395601 45.0639 0.635006 40.7323 0.897937 39.3635C1.84864 34.4328 7.70091 30.2221 12.4074 29.1694C15.8933 28.3889 17.3463 31.8478 19.6809 33.714C19.8967 33.868 20.2067 33.8666 20.4198 33.714C21.7289 32.5721 22.926 30.9862 24.2517 29.9005C25.85 28.5923 27.2546 28.9812 29.0301 29.5927C33.7767 31.2267 38.7087 34.9825 39.3536 40.2431C39.5307 41.6901 39.6013 44.2462 39.4449 45.6809C39.2788 47.2146 37.7538 48.0405 36.5887 46.9438Z" fill="white"/></svg>                            
+                    </div>
+                </div>
+                <h1 class="text-xl md:text-3xl">Welcome, (Student Name)</h1>
+                <p class="text-sm md:text-base py-2">Form 5 (2025)</p>
+                <div class="w-full space-y-3 py-3 pt-5">
+                    <a href="/1-home.html" class="w-full flex justify-center items-center text-sm md:text-base transition-all duration-300 bg-zinc-200 hover:bg-zinc-300 rounded-lg p-3">Continue</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END : HERO SECTION -->
+
+    <!-- START : FOOTER -->
+    <footer class="w-full bg-white">
+        <div class="w-full max-w-screen-xl mx-auto px-4 py-10">
+            <!-- LOGO -->
+            <div class="w-full flex flex-col justify-center items-center space-y-5">
+                <img src="./asset/images/main-logo.png" alt="" class="h-20" />
+                <!-- MENU LIST -->
+                <ul class="flex space-x-5 text-black py-3">
+                    <li>
+                        <a href="" class="hover:text-zinc-500">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-zinc-500">Timetable</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-zinc-500">Classess</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-zinc-500">Inbox</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-zinc-500">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-zinc-500">Support</a>
+                    </li>
+                </ul>
+                <!-- BOTTOM -->
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-0 items-end">
+                    <!-- LEFT FORM -->
+                    <form action="#" method="POST" class="w-full">
+                        <label for="subscribe" class="text-sm text-zinc-500 pb-2">Newsletter</label>
+                        <div class="relative w-full h-10 md:h-12">
+                            <input type="text" id="subscribe" placeholder="Enter your email" class="w-full h-full flex rounded-full text-sm text-black border px-4" />
+                            <button class="absolute top-0 right-0 w-32 h-full text-sm bg-black text-white text-center rounded-full">Subscribe</button>
+                        </div>
+                    </form>
+                    <!-- CENTER SOSMED -->
+                    <div class="w-full flex md:justify-end md:items-end space-x-3">
+                        <a href="#" class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#" class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#" class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#" class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                    </div>
+                    <!-- RIGHT COPYRIGHT -->
+                    <div class="w-full flex md:justify-end text-black md:col-span-2 lg:col-span-1 md:pt-10 lg:pt-0">
+                        <p class="text-sm text-end">©  2025 copyright. All right reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END : FOOTER -->
+
+    <!-- SCRIPT -->
+    <script>
+        
+    </script>
+</body>
+</html>
