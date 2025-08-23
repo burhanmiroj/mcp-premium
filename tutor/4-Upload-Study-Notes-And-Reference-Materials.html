@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ selectedSubject: '' }" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCB WEBSITE - Upload Study And Reference Materials</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- TAILWINDCSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- ALPINE.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <!-- INTERNAL CSS -->
+  <link rel="stylesheet" href="./asset/css/app.css" />
+</head>
+
+<body class="bg-black text-white font-inter">
+  <!-- START : NAVBAR -->
+  <nav
+    class="w-full fixed top-0 left-0 z-50 font-inter p-4 h-[106px] bg-[#EAEAEA] flex items-center justify-between px-8 md:px-12">
+    <!-- LOGO -->
+    <div class="flex items-center">
+      <img src="../asset/images/main-logo.png" alt="Logo" class="w-[152px] h-[95px] object-contain" />
+    </div>
+    <!-- PROFILE AREA -->
+    <div class="flex items-center space-x-3">
+      <span class="text-[#9E9B9B] font-medium text-[15px] leading-[120%] tracking-[-3%]">Tutor Profile</span>
+      <button
+        class="w-[51px] h-[51px] rounded-full bg-black flex items-center justify-center hover:bg-gray-800 transition-all">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25a8.25 8.25 0 1115 0v.75H4.5v-.75z" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <!-- END : NAVBAR -->
+
+  <!-- START : CONTENT -->
+  <section class="flex-1 w-full px-6 md:px-16 mt-[140px] bg-black text-white pb-10">
+    <!-- HEADER + BREADCRUMB -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+      <div class="flex items-center space-x-6">
+        <img src="../asset/images/dashboard-avatar.png" alt="Tutor Avatar" class="w-[100px] h-auto" />
+        <div>
+          <p class="text-sm text-gray-400">Tutor Dashboard</p>
+          <h1 class="text-4xl font-bold">Welcome Back!</h1>
+        </div>
+      </div>
+      <!-- Breadcrumb -->
+      <div class="text-[#9e9e9e] mt-4 md:mt-0">
+        Home <span class="mx-2">></span>
+        <span class="text-white">Upload Study Notes And Reference Materials</span>
+      </div>
+    </div>
+
+    <!-- Garis Pemisah -->
+    <div class="w-full h-[1px] bg-[#323232] mt-6"></div>
+
+    <!-- Back Button + Title -->
+    <div class="flex items-center space-x-4 mt-6">
+      <!-- Tombol Back -->
+      <button
+        class="w-[39px] h-[39px] flex items-center justify-center rounded-full bg-[#F2F2F2] hover:bg-[#e2e2e2] transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <h2 class="text-[20px] font-semibold text-[#EBEBEB] tracking-[-0.03em]">
+        Upload Study Notes And Reference Materials
+      </h2>
+    </div>
+
+    <!-- FORM -->
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-4 gap-6" x-data="{ startDate: '29 Jun 2025 (Mon)', endDate: '' }">
+      <!-- FOTO PROFIL -->
+      <div class="md:col-span-1 flex flex-col items-center">
+        <img src="../asset/images/person-card-example.png" alt="Tutor"
+          class="rounded-lg shadow-lg w-[154px] h-[186px] object-cover" />
+        <span class="uppercase text-xs font-bold mt-3 tracking-wider">Add Math</span>
+      </div>
+
+      <!-- FORM AREA -->
+      <div x-data="fileUploader()" class="md:col-span-3 grid grid-cols-1 gap-5">
+        <!-- Form + Group -->
+        <div class="md:col-span-3 grid grid-cols-1 gap-5">
+          <!-- Topic Name -->
+          <div>
+            <label class="block text-[#A4A4A4] text-sm mb-1">Topic Name</label>
+            <select class="w-full bg-[#0F1012] border border-[#181A1C] text-white rounded-xl p-3">
+              <option selected>
+                Differentiation Long Long Topic Name Long
+              </option>
+              <option>Integration</option>
+              <option>Statistics</option>
+            </select>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-[#A4A4A4] text-sm mb-1">Form</label>
+              <select
+                class="w-full bg-[#0F1012] border border-[#181A1C] text-white rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option selected>2</option>
+                <option>1</option>
+                <option>3</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[#A4A4A4] text-sm mb-1">Class Group</label>
+              <select
+                class="w-full bg-[#0F1012] border border-[#181A1C] text-white rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option selected>Group A</option>
+                <option>Group B</option>
+                <option>Group C</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Upload Study Notes -->
+          <div>
+            <label class="block text-[#A4A4A4] text-sm mb-2">Study Notes And Reference Materials</label>
+            <input type="file" multiple @change="handleFiles($event)" class="hidden" id="fileInput" />
+            <label for="fileInput"
+              class="cursor-pointer bg-white text-black font-semibold px-6 py-2 rounded-full shadow hover:bg-gray-200 transition">
+              Upload
+            </label>
+
+          </div>
+          <div class="mt-6 space-y-3" x-show="files.length > 0">
+            <template x-for="(file, index) in files" :key="index">
+              <div class="flex items-center space-x-4 bg-[#1C1C1C] rounded-lg px-4 py-3 shadow">
+                <!-- ICON DELETE -->
+                <button @click="removeFile(index)"
+                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="black" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+                <!-- FILE NAME -->
+                <p class="text-[#28B700] font-medium text-[15px] leading-[120%] tracking-[-0.03em] truncate w-[80%]"
+                  x-text="file.name"></p>
+              </div>
+            </template>
+          </div>
+
+          <!-- CONFIRM BUTTON -->
+          <button class="w-full mt-6 bg-white text-black font-semibold py-3 rounded-full hover:bg-gray-200 transition">
+            Confirm Schedule
+          </button>
+        </div>
+      </div>
+  </section>
+  <!-- END : CONTENT -->
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-white mt-16">
+    <div class="w-full max-w-screen-xl mx-auto px-4 py-10">
+      <div class="w-full flex flex-col justify-center items-center space-y-5">
+        <img src="../asset/images/main-logo.png" alt="" class="h-20" />
+        <ul class="flex space-x-5 text-black py-3">
+          <li><a href="#" class="hover:text-zinc-500">Home</a></li>
+          <li><a href="#" class="hover:text-zinc-500">Timetable</a></li>
+          <li><a href="#" class="hover:text-zinc-500">Classess</a></li>
+          <li><a href="#" class="hover:text-zinc-500">Inbox</a></li>
+          <li><a href="#" class="hover:text-zinc-500">FAQ</a></li>
+          <li><a href="#" class="hover:text-zinc-500">Support</a></li>
+        </ul>
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-0 items-end">
+          <form action="#" method="POST" class="w-full">
+            <label for="subscribe" class="text-sm text-zinc-500 pb-2">Newsletter</label>
+            <div class="relative w-full h-10 md:h-12">
+              <input type="text" id="subscribe" placeholder="Enter your email"
+                class="w-full h-full flex rounded-full text-sm text-black border px-4" />
+              <button class="absolute top-0 right-0 w-32 h-full text-sm bg-black text-white text-center rounded-full">
+                Subscribe
+              </button>
+            </div>
+          </form>
+          <div class="w-full flex md:justify-end md:items-end space-x-3">
+            <a href="#"
+              class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+            <a href="#"
+              class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+            <a href="#"
+              class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+            <a href="#"
+              class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+          </div>
+          <div class="w-full flex md:justify-end text-black md:col-span-2 lg:col-span-1 md:pt-10 lg:pt-0">
+            <p class="text-sm text-end">
+              © 2025 copyright. All right reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END : FOOTER -->
+</body>
+<script>
+  function fileUploader() {
+    return {
+      files: [],
+      handleFiles(event) {
+        // Tambahkan file yang dipilih ke daftar
+        for (let file of event.target.files) {
+          this.files.push(file);
+        }
+        // Reset input agar bisa upload file dengan nama sama lagi
+        event.target.value = '';
+      },
+      removeFile(index) {
+        this.files.splice(index, 1);
+      }
+    }
+  }
+</script>
+
+</html>
