@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" x-data>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCB WEBSITE — All Classes</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- TAILWINDCSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- ALPINE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <!-- INTERNAL CSS (opsional) -->
+    <link rel="stylesheet" href="./asset/css/app.css" />
+</head>
+
+<body class="font-inter bg-black text-white">
+    <!-- START : NAVBAR -->
+    <nav
+        class="w-full fixed top-0 left-0 z-50 p-4 h-[106px] bg-[#EAEAEA] flex items-center justify-between px-8 md:px-12">
+        <!-- LOGO -->
+        <div class="flex items-center">
+            <img src="../asset/images/main-logo.png" alt="Logo" class="w-[152px] h-[95px] object-contain" />
+        </div>
+
+        <!-- PROFILE AREA -->
+        <div class="flex items-center space-x-3">
+            <span class="text-[#9E9B9B] font-medium text-[15px] leading-[120%] tracking-[-.03em]">Tutor Profile</span>
+            <button
+                class="w-[51px] h-[51px] rounded-full bg-black flex items-center justify-center hover:bg-gray-800 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25a8.25 8.25 0 1115 0v.75H4.5v-.75z" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <!-- END : NAVBAR -->
+
+    <!-- START : HEADER / WELCOME -->
+    <section class="w-full px-6 md:px-16 mt-[106px] pt-8 pb-6 bg-black">
+        <!-- HEADER + BREADCRUMB -->
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center space-x-6">
+                <img src="../asset/images/dashboard-avatar.png" alt="Tutor Avatar" class="w-[100px] h-auto" />
+                <div>
+                    <p class="text-sm text-gray-400">Tutor Dashboard</p>
+                    <h1 class="text-4xl font-bold">Welcome Back!</h1>
+                </div>
+            </div>
+            <!-- Breadcrumb -->
+            <div class="text-[#9e9e9e] mt-4 md:mt-0">
+                Home <span class="mx-2">></span>
+                <span class="text-white">All Classes</span>
+            </div>
+        </div>
+
+        <!-- Garis Pemisah -->
+        <div class="w-full h-[1px] bg-[#323232] mt-6"></div>
+
+        <!-- Back Button + Title -->
+        <div class="flex items-center space-x-4 mt-6">
+            <!-- Tombol Back -->
+            <button
+                class="w-[39px] h-[39px] flex items-center justify-center rounded-full bg-[#F2F2F2] hover:bg-[#e2e2e2] transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <h2 class="text-[20px] font-semibold text-[#EBEBEB] tracking-[-0.03em]">
+                All Classes
+            </h2>
+        </div>
+    </section>
+    <!-- END : HEADER / WELCOME -->
+
+    <!-- START : FILTER + PROFILE -->
+    <section class="w-full px-6 md:px-16 mt-6">
+        <div class="flex flex-col md:flex-row md:items-start md:gap-8">
+            <!-- PROFILE KIRI -->
+            <div class="flex items-start gap-4">
+                <img src="../asset/images/person-card-example.png" alt="Tutor"
+                    class="w-[154px] h-[186px] object-cover rounded-xl shadow-lg" />
+                <div class="mt-2">
+                    <!-- ADD MATH -->
+                    <div class="uppercase tracking-[.03em] text-[#EBEBEB] text-[15px] leading-none font-[400] font-[Bayon,_sans-serif]"
+                        style="font-family: Bayon, Inter, sans-serif">
+                        ADD MATH
+                    </div>
+
+                    <!-- Label FORM -->
+                    <div class="text-[#A4A4A4] text-[15px] leading-[1.43] mt-4 mb-2 font-medium">
+                        Form
+                    </div>
+
+                    <!-- Select FORM -->
+                    <div class="w-full md:w-[351px]">
+                        <select
+                            class="w-full h-12 rounded-[14px] bg-[#0F1012] border border-[#181A1C] px-4 text-sm text-white">
+                            <option value="" selected disabled>Select form</option>
+                            <option>Form 1</option>
+                            <option>Form 2</option>
+                            <option>Form 3</option>
+                            <option>Form 4</option>
+                            <option>Form 5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GARIS PEMISAH LEBAR -->
+        <div class="mt-8 border-b border-[#323232]"></div>
+    </section>
+    <!-- END : FILTER + PROFILE -->
+
+    <!-- START : CLASSES LIST HEADER + SEARCH -->
+    <section class="w-full px-6 md:px-16 mt-6">
+        <div class="flex items-center justify-between flex-wrap gap-4">
+            <div>
+                <div class="text-[15px] leading-[1.2] tracking-[-.03em] font-semibold text-[#EBEBEB]">
+                    Group Lists
+                </div>
+                <div class="text-[15px] leading-[1.2] text-[#CFCFCF] mt-1">
+                    1234 classes
+                </div>
+            </div>
+
+            <!-- SEARCH -->
+            <div x-data="{q:''}" class="relative w-full sm:w-[360px] md:w-[420px] lg:w-[480px]">
+                <input x-model="q" type="text" placeholder="Search"
+                    class="w-full h-11 rounded-full bg-[#0F1012] border border-[#181A1C] px-12 text-sm text-white placeholder:text-[#8A8A8A] focus:outline-none" />
+                <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#8A8A8A]"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <!-- END : CLASSES LIST HEADER + SEARCH -->
+
+    <!-- START : TABLE -->
+    <section class="w-full px-6 md:px-16 mt-4 pb-16">
+        <div x-data="classesTable()" x-init="init()"
+            class="bg-[#121212] rounded-2xl border border-[#222]/60 overflow-hidden mt-2">
+            <!-- TABLE SCROLLER -->
+            <div class="overflow-x-auto">
+                <table class="min-w-[960px] w-full text-sm">
+                    <thead class="bg-[#1A1A1A] text-[#CFCFCF] uppercase tracking-wide text-[11px]">
+                        <tr>
+                            <th class="px-5 py-4 text-left">No</th>
+                            <th class="px-5 py-4 text-left">Group Name</th>
+                            <th class="px-5 py-4 text-left">Total Students</th>
+                            <th class="px-5 py-4 text-left">Latest Topic</th>
+                            <th class="px-5 py-4 text-left">Replay Video Upload Date</th>
+                            <th class="px-5 py-4 text-left">Notes Upload Date</th>
+                            <th class="px-5 py-4 text-left">Quizzes Upload Date</th>
+                            <th class="px-5 py-4 text-left">Live Schedule URL</th>
+                            <th class="px-5 py-4 text-left">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-[#2a2a2a]">
+                        <template x-for="(row,idx) in paged" :key="row.id">
+                            <tr class="hover:bg-[#1A1A1A]">
+                                <td class="px-5 py-4 text-[#ECECEC]" x-text="row.no"></td>
+                                <td class="px-5 py-4" x-text="row.group"></td>
+                                <td class="px-5 py-4" x-text="row.students"></td>
+                                <td class="px-5 py-4">
+                                    <span class="truncate inline-block max-w-[220px]" x-text="row.topic"></span>
+                                </td>
+                                <td class="px-5 py-4" x-text="row.replayAt"></td>
+                                <td class="px-5 py-4" x-text="row.notesAt"></td>
+                                <td class="px-5 py-4" x-text="row.quizAt"></td>
+                                <td class="px-5 py-4">
+                                    <a href="#" class="text-[#9ad0ff] underline decoration-dotted"
+                                        x-text="row.zoom"></a>
+                                </td>
+                                <td class="px-5 py-4">
+                                    <button
+                                        class="px-4 py-2 rounded-full bg-white text-black text-xs font-semibold hover:bg-gray-200">
+                                        View
+                                    </button>
+                                </td>
+                            </tr>
+                        </template>
+
+                        <!-- EMPTY -->
+                        <tr x-show="paged.length===0">
+                            <td colspan="9" class="px-5 py-8 text-center text-[#9b9b9b]">
+                                No classes found
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="flex items-center justify-end gap-3 px-5 py-4 border-t border-[#222]/60">
+                <span class="text-xs text-[#A4A4A4] mr-2">Page</span>
+                <button @click="prev()"
+                    class="w-8 h-8 rounded-full bg-[#1A1A1A] flex items-center justify-center hover:bg-[#2a2a2a]"
+                    title="Prev">
+                    ‹
+                </button>
+                <template x-for="p in pages" :key="p">
+                    <button @click="go(p)" class="w-8 h-8 rounded-full flex items-center justify-center"
+                        :class="page===p ? 'bg-white text-black' : 'bg-[#1A1A1A] hover:bg-[#2a2a2a]'"
+                        x-text="p"></button>
+                </template>
+                <button @click="next()"
+                    class="w-8 h-8 rounded-full bg-[#1A1A1A] flex items-center justify-center hover:bg-[#2a2a2a]"
+                    title="Next">
+                    ›
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- END : TABLE -->
+
+    <!-- START : FOOTER -->
+    <footer class="w-full bg-white">
+        <div class="w-full max-w-screen-xl mx-auto px-4 py-10">
+            <!-- LOGO + MENU + NEWSLETTER (ringkas) -->
+            <div class="w-full flex flex-col justify-center items-center space-y-5">
+                <img src="../asset/images/main-logo.png" alt="" class="h-20" />
+                <ul class="flex space-x-5 text-black py-3">
+                    <li><a href="#" class="hover:text-zinc-500">Home</a></li>
+                    <li><a href="#" class="hover:text-zinc-500">Timetable</a></li>
+                    <li><a href="#" class="hover:text-zinc-500">Classess</a></li>
+                    <li><a href="#" class="hover:text-zinc-500">Inbox</a></li>
+                    <li><a href="#" class="hover:text-zinc-500">FAQ</a></li>
+                    <li><a href="#" class="hover:text-zinc-500">Support</a></li>
+                </ul>
+                <p class="text-sm text-end text-black">© 2025 copyright. All right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- END : FOOTER -->
+
+    <!-- ALPINE COMPONENT -->
+    <script>
+        function classesTable() {
+            return {
+                rows: [],
+                page: 1,
+                perPage: 10,
+                get pages() {
+                    return Math.max(1, Math.ceil(this.filtered.length / this.perPage));
+                },
+                get filtered() {
+                    const q = (document.querySelector('[x-model="q"]')?.value || "")
+                        .toLowerCase()
+                        .trim();
+                    if (!q) return this.rows;
+                    return this.rows.filter(
+                        (r) =>
+                            r.group.toLowerCase().includes(q) ||
+                            r.topic.toLowerCase().includes(q) ||
+                            r.zoom.toLowerCase().includes(q)
+                    );
+                },
+                get paged() {
+                    const start = (this.page - 1) * this.perPage;
+                    return this.filtered.slice(start, start + this.perPage);
+                },
+                init() {
+                    // Dummy data (10 baris pertama sesuai contoh)
+                    const make = (i, g) => ({
+                        id: i,
+                        no: i,
+                        group: g,
+                        students: 80,
+                        topic: "Topic Name Here Long Topic Name...",
+                        replayAt: "12 Jun 6:00 PM",
+                        notesAt: i % 4 === 0 ? "-" : "12 Jun 6:00 PM",
+                        quizAt: "12 Jun 6:00 PM",
+                        zoom:
+                            "https://zoom.us/j/1234567890?pwd=abcd123...",
+                    });
+                    const groups = [
+                        "Group A", "Group B", "Group C", "Group D", "Group E",
+                        "Group F", "Group G", "Group H", "Group I", "Group J",
+                    ];
+                    this.rows = groups.map((g, idx) => make(idx + 1, g));
+                },
+                go(p) {
+                    this.page = p;
+                },
+                next() {
+                    if (this.page < this.pages) this.page++;
+                },
+                prev() {
+                    if (this.page > 1) this.page--;
+                },
+            };
+        }
+    </script>
+</body>
+
+</html>
