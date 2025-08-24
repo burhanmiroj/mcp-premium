@@ -2,221 +2,215 @@
 <html lang="en" x-data="{ selectedSubject: '' }" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MCB WEBSITE - Upload Replay Video</title>
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet" />
-  <!-- TAILWINDCSS -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- ALPINE.JS -->
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-  <!-- INTERNAL CSS -->
-  <link rel="stylesheet" href="./asset/css/app.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCB WEBSITE - Upload Replay Video</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <!-- TAILWINDCSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- ICONIFY -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <!-- ALPINE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <!-- INTERNAL CSS -->
+    <link rel="stylesheet" href="./asset/css/app.css" />
 </head>
 
 <body class="bg-black text-white font-inter">
-  <!-- START : NAVBAR -->
-  <nav
-    class="w-full fixed top-0 left-0 z-50 font-inter p-4 h-[106px] bg-[#EAEAEA] flex items-center justify-between px-8 md:px-12">
-    <!-- LOGO -->
-    <div class="flex items-center">
-      <img src="../asset/images/main-logo.png" alt="Logo" class="w-[152px] h-[95px] object-contain" />
-    </div>
-    <!-- PROFILE AREA -->
-    <div class="flex items-center space-x-3">
-      <span class="text-[#9E9B9B] font-medium text-[15px] leading-[120%] tracking-[-3%]">Tutor Profile</span>
-      <button
-        class="w-[51px] h-[51px] rounded-full bg-black flex items-center justify-center hover:bg-gray-800 transition-all">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25a8.25 8.25 0 1115 0v.75H4.5v-.75z" />
-        </svg>
-      </button>
-    </div>
-  </nav>
-  <!-- END : NAVBAR -->
+	<!-- START : NAVBAR -->
+	<nav class="w-full h-20 md:h-24 bg-zinc-50 px-4">
+		<div class="w-full h-full max-w-screen-xl mx-auto flex items-center justify-between">
+			<!-- LOGO -->
+			<div class="flex items-center">
+				<img src="/asset/images/main-logo.png" alt="" class="h-16" />
+			</div>
+			<!-- PROFILE AREA -->
+			<div class="flex items-center space-x-3">
+				<span class="text-zinc-500 font-medium text-sm">Student Profile</span>
+				<button class="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:bg-gray-800 bg-black rounded-full ring-2 ring-black ring-offset-2">
+					<svg class="w-4" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.7642 5.2339L15.0074 6.25421C14.9126 7.51597 15.1358 8.75453 14.7512 9.98219C13.278 14.6868 6.39287 14.7421 4.83315 10.0599C4.41627 8.8091 4.64772 7.54325 4.55225 6.25421L0.609352 4.75034C0.00359716 4.42637 0.0406841 3.5411 0.687647 3.29352L9.52122 0L10.0789 0.0102304L19.0478 3.374C19.3081 3.55951 19.3871 3.77299 19.4138 4.08331C19.2971 5.97458 19.5629 8.03568 19.4138 9.90716C19.3596 10.5844 18.7854 11.1437 18.1268 10.7195C18.0389 10.6629 17.7635 10.3443 17.7635 10.2625V5.2339H17.7642ZM16.2182 4.00897L9.75817 1.66279L3.34074 4.03421L9.79732 6.44723C11.8323 5.62538 13.9387 4.96791 15.9744 4.14879C16.0437 4.12082 16.2065 4.08604 16.2189 4.00897H16.2182ZM13.3343 6.86736C12.1324 7.24929 10.9814 7.80992 9.76298 8.12434L6.22597 6.86736V8.93527C6.22597 9.21149 6.54671 9.94399 6.69986 10.2018C8.08582 12.5412 11.561 12.5071 12.8975 10.1363C13.0362 9.89011 13.3343 9.19376 13.3343 8.93596V6.86804V6.86736Z" fill="white"/><path d="M17.9891 23.1346C17.8675 23.0207 17.783 22.8324 17.7652 22.6674C17.6835 21.9178 17.8229 21.0325 17.7672 20.2659C17.6368 18.4633 16.1038 17.1279 14.5551 16.4043C14.2584 16.2658 13.3731 15.89 13.0902 15.8594C13.0325 15.8532 12.9899 15.8532 12.9473 15.8989C12.2976 16.4643 11.7028 17.2568 11.0414 17.7902C10.641 18.1128 10.1232 18.2976 9.60123 18.2505C8.38904 18.1414 7.46598 16.5489 6.55117 15.8594C4.49902 16.3634 1.9723 17.9204 1.79785 20.2175C1.74222 20.9534 1.92353 22.102 1.78549 22.7581C1.63096 23.4926 0.464778 23.6058 0.215471 22.8058C0.0266017 22.2015 0.145418 20.0518 0.275909 19.3725C0.747738 16.9254 3.6522 14.8356 5.988 14.3132C7.71804 13.9258 8.43917 15.6425 9.5978 16.5687C9.70494 16.6451 9.85878 16.6444 9.96455 16.5687C10.6143 16.0019 11.2083 15.2148 11.8663 14.676C12.6595 14.0267 13.3566 14.2198 14.2378 14.5233C16.5935 15.3342 19.0413 17.1982 19.3613 19.809C19.4492 20.5272 19.4842 21.7957 19.4066 22.5078C19.3242 23.2689 18.5674 23.6788 17.9891 23.1346Z" fill="white"/></svg>
+				</button>
+				<iconify-icon icon="majesticons:chevron-down" width="24" height="24"></iconify-icon>
+			</div>
+		</div>
+	</nav>
+	<!-- END : NAVBAR -->
 
-  <!-- START : CONTENT -->
-  <section class="flex-1 w-full px-6 md:px-16 mt-[140px] bg-black text-white pb-10">
-    <!-- HEADER + BREADCRUMB -->
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-      <div class="flex items-center space-x-6">
-        <img src="../asset/images/dashboard-avatar.png" alt="Tutor Avatar" class="w-[100px] h-auto" />
-        <div>
-          <p class="text-sm text-gray-400">Tutor Dashboard</p>
-          <h1 class="text-4xl font-bold">Welcome Back!</h1>
-        </div>
-      </div>
-      <!-- Breadcrumb -->
-      <div class="text-[#9e9e9e] mt-4 md:mt-0">
-        Home <span class="mx-2">></span>
-        <span class="text-white">Upload Replay Video</span>
-      </div>
-    </div>
-
-    <!-- Garis Pemisah -->
-    <div class="w-full h-[1px] bg-[#323232] mt-6"></div>
-
-    <!-- Back Button + Title -->
-    <div class="flex items-center space-x-4 mt-6">
-      <!-- Tombol Back -->
-      <button
-        class="w-[39px] h-[39px] flex items-center justify-center rounded-full bg-[#F2F2F2] hover:bg-[#e2e2e2] transition">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <h2 class="text-[20px] font-semibold text-[#EBEBEB] tracking-[-0.03em]">
-        Upload Replay Video
-      </h2>
-    </div>
-
-    <!-- FORM -->
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-4 gap-6" x-data="{ startDate: '29 Jun 2025 (Mon)', endDate: '' }">
-      <!-- FOTO PROFIL -->
-      <div class="md:col-span-1 flex flex-col items-center">
-        <img src="../asset/images/person-card-example.png" alt="Tutor"
-          class="rounded-lg shadow-lg w-[154px] h-[186px] object-cover" />
-        <span class="uppercase text-xs font-bold mt-3 tracking-wider">Add Math</span>
-      </div>
-
-      <!-- FORM AREA -->
-      <div class="md:col-span-3 grid grid-cols-1 gap-5">
-        <!-- Form + Group -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div>
-            <label class="block text-[#A4A4A4] text-sm mb-1">Form</label>
-            <select
-              class="w-full bg-[#0F1012] border border-[#181A1C] text-white rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
-              <option selected>2</option>
-              <option>1</option>
-              <option>3</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-[#A4A4A4] text-sm mb-1">Class Group</label>
-            <select
-              class="w-full bg-[#0F1012] border border-[#181A1C] text-white rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
-              <option selected>Group A</option>
-              <option>Group B</option>
-              <option>Group C</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Topic Name -->
-        <div>
-          <label class="block text-[#A4A4A4] text-sm mb-1">Topic Name</label>
-          <select class="w-full bg-[#0F1012] border border-[#181A1C] text-white rounded-xl p-3">
-            <option selected>
-              Differentiation Long Long Topic Name Long
-            </option>
-            <option>Integration</option>
-            <option>Statistics</option>
-          </select>
-        </div>
-
-        <!-- Upload Study Notes -->
-        <div>
-          <label class="block text-[#A4A4A4] text-sm mb-2">Study Notes And Reference Materials</label>
-          <button class="bg-white text-black px-5 py-2 rounded-full font-semibold hover:bg-gray-200 transition">
-            Upload
-          </button>
-          <div class="mt-5 flex space-x-5">
-            <div class="bg-[#0F1012] rounded-lg w-[160px] h-[120px] flex items-center justify-center shadow-md">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2">
-                <path d="M12 4v16m8-8H4" />
-              </svg>
+	<!-- START : DASHBOARD -->
+	<section class="w-full bg-black text-white py-10">
+		<div class="w-full max-w-screen-xl mx-auto px-4">
+            <!-- WELCOME BACK -->
+            <div class="flex items-center border-b border-zinc-800 space-x-5">
+                <img src="/asset/images/student-profile-vector.svg" alt="Tutor Avatar" class="w-28" />
+                <div>
+                    <p class="text-sm text-gray-400">Student</p>
+                    <h1 class="text-xl md:text-4xl font-bold">My Profile</h1>
+                </div>
             </div>
-            <div class="bg-[#0F1012] rounded-lg w-[160px] h-[120px] flex items-center justify-center shadow-md">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2">
-                <path d="M12 4v16m8-8H4" />
-              </svg>
+            <!-- Back Button + Title -->
+            <div class="flex items-center space-x-4 mt-6">
+                <!-- Tombol Back -->
+                <button
+                    class="w-[39px] h-[39px] flex items-center justify-center rounded-full bg-[#F2F2F2] hover:bg-[#e2e2e2] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <h2 class="text-[20px] font-semibold text-[#EBEBEB] tracking-[-0.03em]">
+                    Upload Replay Video
+                </h2>
             </div>
-          </div>
-        </div>
+            <!-- FORM -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-4 gap-6"
+                x-data="{ startDate: '29 Jun 2025 (Mon)', endDate: '' }">
+                <!-- FOTO PROFIL -->
+                <div class="md:col-span-1 flex flex-col items-center">
+                    <img src="../asset/images/person-card-example.png" alt="Tutor"
+                        class="rounded-lg shadow-lg w-[154px] h-[186px] object-cover" />
+                    <span class="uppercase text-xs font-bold mt-3 tracking-wider">Add Math</span>
+                </div>
 
-        <!-- Start Date & End Date -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div>
-            <label class="block text-[#A4A4A4] text-sm mb-1">Start Date</label>
-            <select x-model="startDate" class="w-full bg-[#0F1012] border border-[#181A1C] text-white rounded-xl p-3">
-              <option>29 Jun 2025 (Mon)</option>
-              <option>30 Jun 2025 (Tue)</option>
-              <option>1 Jul 2025 (Wed)</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-[#A4A4A4] text-sm mb-1">End Date</label>
-            <input type="text" x-model="endDate" placeholder="12 Jul 2025"
-              class="w-full bg-[#1c1c1c] border border-[#181A1C] text-gray-500 rounded-xl p-3" disabled />
-          </div>
-        </div>
+                <!-- FORM AREA -->
+                <div class="md:col-span-3 grid grid-cols-1 gap-5">
+                    <!-- Form + Group -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-[#A4A4A4] text-sm mb-1">Form</label>
+                            <select
+                                class="w-full bg-[#0F1012] border border-[#181A1C] text-white rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option selected>2</option>
+                                <option>1</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[#A4A4A4] text-sm mb-1">Class Group</label>
+                            <select
+                                class="w-full bg-[#0F1012] border border-[#181A1C] text-white rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option selected>Group A</option>
+                                <option>Group B</option>
+                                <option>Group C</option>
+                            </select>
+                        </div>
+                    </div>
 
-        <!-- Upload Button -->
-        <div class="mt-8">
-          <button class="bg-white text-black rounded-full w-full py-3 font-semibold hover:bg-gray-200 transition">
-            Upload Replay Video
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- END : CONTENT -->
+                    <!-- Topic Name -->
+                    <div>
+                        <label class="block text-[#A4A4A4] text-sm mb-1">Topic Name</label>
+                        <select class="w-full bg-[#0F1012] border border-[#181A1C] text-white rounded-xl p-3">
+                            <option selected>
+                                Differentiation Long Long Topic Name Long
+                            </option>
+                            <option>Integration</option>
+                            <option>Statistics</option>
+                        </select>
+                    </div>
 
-  <!-- FOOTER -->
-  <footer class="w-full bg-white mt-16">
-    <div class="w-full max-w-screen-xl mx-auto px-4 py-10">
-      <div class="w-full flex flex-col justify-center items-center space-y-5">
-        <img src="../asset/images/main-logo.png" alt="" class="h-20" />
-        <ul class="flex space-x-5 text-black py-3">
-          <li><a href="#" class="hover:text-zinc-500">Home</a></li>
-          <li><a href="#" class="hover:text-zinc-500">Timetable</a></li>
-          <li><a href="#" class="hover:text-zinc-500">Classess</a></li>
-          <li><a href="#" class="hover:text-zinc-500">Inbox</a></li>
-          <li><a href="#" class="hover:text-zinc-500">FAQ</a></li>
-          <li><a href="#" class="hover:text-zinc-500">Support</a></li>
-        </ul>
-        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-0 items-end">
-          <form action="#" method="POST" class="w-full">
-            <label for="subscribe" class="text-sm text-zinc-500 pb-2">Newsletter</label>
-            <div class="relative w-full h-10 md:h-12">
-              <input type="text" id="subscribe" placeholder="Enter your email"
-                class="w-full h-full flex rounded-full text-sm text-black border px-4" />
-              <button class="absolute top-0 right-0 w-32 h-full text-sm bg-black text-white text-center rounded-full">
-                Subscribe
-              </button>
+                    <!-- Upload Study Notes -->
+                    <div>
+                        <label class="block text-[#A4A4A4] text-sm mb-2">Study Notes And Reference Materials</label>
+                        <button
+                            class="bg-white text-black px-5 py-2 rounded-full font-semibold hover:bg-gray-200 transition">
+                            Upload
+                        </button>
+                        <div class="mt-5 flex space-x-5">
+                            <div
+                                class="bg-[#0F1012] rounded-lg w-[160px] h-[120px] flex items-center justify-center shadow-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 4v16m8-8H4" />
+                                </svg>
+                            </div>
+                            <div
+                                class="bg-[#0F1012] rounded-lg w-[160px] h-[120px] flex items-center justify-center shadow-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 4v16m8-8H4" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Start Date & End Date -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-[#A4A4A4] text-sm mb-1">Start Date</label>
+                            <select x-model="startDate"
+                                class="w-full bg-[#0F1012] border border-[#181A1C] text-white rounded-xl p-3">
+                                <option>29 Jun 2025 (Mon)</option>
+                                <option>30 Jun 2025 (Tue)</option>
+                                <option>1 Jul 2025 (Wed)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[#A4A4A4] text-sm mb-1">End Date</label>
+                            <input type="text" x-model="endDate" placeholder="12 Jul 2025"
+                                class="w-full bg-[#1c1c1c] border border-[#181A1C] text-gray-500 rounded-xl p-3" disabled />
+                        </div>
+                    </div>
+
+                    <!-- Upload Button -->
+                    <div class="mt-8">
+                        <button
+                            class="bg-white text-black rounded-full w-full py-3 font-semibold hover:bg-gray-200 transition">
+                            Upload Replay Video
+                        </button>
+                    </div>
+                </div>
             </div>
-          </form>
-          <div class="w-full flex md:justify-end md:items-end space-x-3">
-            <a href="#"
-              class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
-            <a href="#"
-              class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
-            <a href="#"
-              class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
-            <a href="#"
-              class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
-          </div>
-          <div class="w-full flex md:justify-end text-black md:col-span-2 lg:col-span-1 md:pt-10 lg:pt-0">
-            <p class="text-sm text-end">
-              © 2025 copyright. All right reserved
-            </p>
-          </div>
         </div>
-      </div>
-    </div>
-  </footer>
-  <!-- END : FOOTER -->
+    </section>
+    <!-- END : CONTENT -->
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-white mt-16">
+        <div class="w-full max-w-screen-xl mx-auto px-4 py-10">
+            <div class="w-full flex flex-col justify-center items-center space-y-5">
+                <img src="../asset/images/main-logo.png" alt="" class="h-20" />
+                <ul class="flex space-x-5 text-black py-3">
+                    <li><a href="#" class="hover:text-zinc-500">Home</a></li>
+                    <li><a href="#" class="hover:text-zinc-500">Timetable</a></li>
+                    <li><a href="#" class="hover:text-zinc-500">Classess</a></li>
+                    <li><a href="#" class="hover:text-zinc-500">Inbox</a></li>
+                    <li><a href="#" class="hover:text-zinc-500">FAQ</a></li>
+                    <li><a href="#" class="hover:text-zinc-500">Support</a></li>
+                </ul>
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-0 items-end">
+                    <form action="#" method="POST" class="w-full">
+                        <label for="subscribe" class="text-sm text-zinc-500 pb-2">Newsletter</label>
+                        <div class="relative w-full h-10 md:h-12">
+                            <input type="text" id="subscribe" placeholder="Enter your email"
+                                class="w-full h-full flex rounded-full text-sm text-black border px-4" />
+                            <button
+                                class="absolute top-0 right-0 w-32 h-full text-sm bg-black text-white text-center rounded-full">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                    <div class="w-full flex md:justify-end md:items-end space-x-3">
+                        <a href="#"
+                            class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#"
+                            class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#"
+                            class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#"
+                            class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                    </div>
+                    <div class="w-full flex md:justify-end text-black md:col-span-2 lg:col-span-1 md:pt-10 lg:pt-0">
+                        <p class="text-sm text-end">
+                            © 2025 copyright. All right reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END : FOOTER -->
 </body>
 
 </html>
