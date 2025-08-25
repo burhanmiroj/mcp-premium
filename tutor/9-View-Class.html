@@ -105,7 +105,18 @@
 
             <!-- Table -->
             <div class="overflow-x-auto">
-                <table class="min-w-full table-auto border-collapse bg-[#0F1012] rounded-xl overflow-hidden">
+                <table class="min-w-full table-fixed border-collapse bg-[#0F1012] rounded-xl overflow-hidden">
+                    <!-- lock column widths -->
+                    <colgroup>
+                        <col class="w-12" /> <!-- No -->
+                        <col /> <!-- Topic (flex) -->
+                        <col class="w-48" /> <!-- Replay Video -->
+                        <col class="w-48" /> <!-- Notes -->
+                        <col class="w-48" /> <!-- Quizzes -->
+                        <col class="w-[260px]" /> <!-- Live Schedule URL -->
+                        <col class="w-56" /> <!-- Schedule -->
+                    </colgroup>
+
                     <thead>
                         <tr class="text-left bg-[#181A1C]">
                             <th class="px-4 py-3 text-sm font-medium text-gray-300">No</th>
@@ -117,42 +128,143 @@
                             <th class="px-4 py-3 text-sm font-medium text-gray-300">Schedule</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <template x-for="i in 9" :key="i">
                             <tr class="border-b border-[#2A2A2A] hover:bg-[#181A1C]">
-                                <td class="px-4 py-3 text-sm text-gray-400" x-text="i"></td>
+                                <!-- No -->
+                                <td class="px-4 py-3 text-sm text-gray-400 whitespace-nowrap" x-text="i"></td>
+
+                                <!-- Topic -->
                                 <td class="px-4 py-3 text-sm">Topic Name Here Long Topic Name</td>
-                                <td class="px-4 py-3 text-sm">12 Jun 6:00 PM</td>
-                                <td class="px-4 py-3 text-sm">12 Jun 6:00 PM</td>
-                                <td class="px-4 py-3 text-sm">12 Jun 6:00 PM</td>
-                                <td class="px-4 py-3 text-sm text-blue-400 truncate"><a
-                                        href="#">https://zoom.us/j/1234567890</a></td>
-                                <td class="px-4 py-3 text-sm">Mon, 13 Jun 2024</td>
+
+                                <!-- Replay Video (value + pencil INSIDE SAME TD) -->
+                                <td class="px-4 py-3 text-sm">
+                                    <div class="flex items-center justify-between gap-3">
+                                        <span class="whitespace-nowrap">12 Jun 6:00 PM</span>
+                                        <button type="button"
+                                            class="shrink-0 w-8 h-8 rounded-full bg-gray-50 hover:bg-gray-100 flex items-center justify-center transition">
+                                            <!-- pencil -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24"
+                                                fill="none" stroke="black" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M16.862 4.487 19.2 2.15a1.875 1.875 0 1 1 2.652 2.652l-8.84 8.84a4.5 4.5 0 0 1-1.897 1.13l-3.564 1.07 1.07-3.563a4.5 4.5 0 0 1 1.13-1.898l6.111-6.111Z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M19.5 7.125 16.862 4.487" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+
+                                <!-- Notes -->
+                                <td class="px-4 py-3 text-sm">
+                                    <div class="flex items-center justify-between gap-3">
+                                        <span class="whitespace-nowrap">12 Jun 6:00 PM</span>
+                                        <button type="button"
+                                            class="shrink-0 w-8 h-8 rounded-full bg-gray-50 hover:bg-gray-100 flex items-center justify-center transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24"
+                                                fill="none" stroke="black" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M16.862 4.487 19.2 2.15a1.875 1.875 0 1 1 2.652 2.652l-8.84 8.84a4.5 4.5 0 0 1-1.897 1.13l-3.564 1.07 1.07-3.563a4.5 4.5 0 0 1 1.13-1.898l6.111-6.111Z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M19.5 7.125 16.862 4.487" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+
+                                <!-- Quizzes -->
+                                <td class="px-4 py-3 text-sm">
+                                    <div class="flex items-center justify-between gap-3">
+                                        <span class="whitespace-nowrap">12 Jun 6:00 PM</span>
+                                        <button type="button"
+                                            class="shrink-0 w-8 h-8 rounded-full bg-gray-50 hover:bg-gray-100 flex items-center justify-center transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24"
+                                                fill="none" stroke="black" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M16.862 4.487 19.2 2.15a1.875 1.875 0 1 1 2.652 2.652l-8.84 8.84a4.5 4.5 0 0 1-1.897 1.13l-3.564 1.07 1.07-3.563a4.5 4.5 0 0 1 1.13-1.898l6.111-6.111Z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M19.5 7.125 16.862 4.487" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+
+                                <!-- Live Schedule URL -->
+                                <td class="px-4 py-3 text-sm">
+                                    <a href="#" class="block text-blue-400 truncate">https://zoom.us/j/1234567890</a>
+                                </td>
+
+                                <!-- Schedule -->
+                                <td class="px-4 py-3 text-sm">
+                                    <div class="flex items-center justify-between gap-3">
+                                        <span class="whitespace-nowrap">Mon, 13 Jun 2024</span>
+                                        <button type="button"
+                                            class="shrink-0 w-8 h-8 rounded-full bg-gray-50 hover:bg-gray-100 flex items-center justify-center transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24"
+                                                fill="none" stroke="black" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M16.862 4.487 19.2 2.15a1.875 1.875 0 1 1 2.652 2.652l-8.84 8.84a4.5 4.5 0 0 1-1.897 1.13l-3.564 1.07 1.07-3.563a4.5 4.5 0 0 1 1.13-1.898l6.111-6.111Z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M19.5 7.125 16.862 4.487" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
                             </tr>
                         </template>
                     </tbody>
                 </table>
             </div>
+
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="w-full bg-white mt-12">
+    <!-- START: FOOTER -->
+    <footer class="w-full bg-white">
         <div class="w-full max-w-screen-xl mx-auto px-4 py-10">
             <div class="w-full flex flex-col justify-center items-center space-y-5">
                 <img src="../asset/images/main-logo.png" alt="" class="h-20" />
                 <ul class="flex space-x-5 text-black py-3">
-                    <li><a href="#" class="hover:text-zinc-500">Home</a></li>
-                    <li><a href="#" class="hover:text-zinc-500">Timetable</a></li>
-                    <li><a href="#" class="hover:text-zinc-500">Classes</a></li>
-                    <li><a href="#" class="hover:text-zinc-500">Inbox</a></li>
-                    <li><a href="#" class="hover:text-zinc-500">FAQ</a></li>
-                    <li><a href="#" class="hover:text-zinc-500">Support</a></li>
+                    <li><a href="" class="hover:text-zinc-500">Home</a></li>
+                    <li><a href="" class="hover:text-zinc-500">Timetable</a></li>
+                    <li><a href="" class="hover:text-zinc-500">Classes</a></li>
+                    <li><a href="" class="hover:text-zinc-500">Inbox</a></li>
+                    <li><a href="" class="hover:text-zinc-500">FAQ</a></li>
+                    <li><a href="" class="hover:text-zinc-500">Support</a></li>
                 </ul>
-                <p class="text-sm text-black">© 2025 copyright. All right reserved</p>
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-0 items-end">
+                    <form action="#" method="POST" class="w-full">
+                        <label for="subscribe" class="text-sm text-zinc-500 pb-2">Newsletter</label>
+                        <div class="relative w-full h-10 md:h-12">
+                            <input type="text" id="subscribe" placeholder="Enter your email"
+                                class="w-full h-full flex rounded-full text-sm text-black border px-4" />
+                            <button
+                                class="absolute top-0 right-0 w-32 h-full text-sm bg-black text-white text-center rounded-full">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                    <div class="w-full flex md:justify-end md:items-end space-x-3">
+                        <a href="#"
+                            class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#"
+                            class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#"
+                            class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                        <a href="#"
+                            class="w-10 h-10 flex border border-black rounded-full transition-all duration-300 hover:bg-black hover:bg-black/50"></a>
+                    </div>
+                    <div class="w-full flex md:justify-end text-black md:col-span-2 lg:col-span-1 md:pt-10 lg:pt-0">
+                        <p class="text-sm text-end">
+                            © 2025 copyright. All rights reserved
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+    <!-- END: FOOTER -->
 </body>
 
 </html>
