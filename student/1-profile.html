@@ -53,17 +53,230 @@
                 </div>
             </div>
             <!-- PROFILE -->
-            <div class="mt-10">
-                <h2 class="flex items-center space-x-3 text-lg">
-                    <svg class="w-4" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.7642 5.2339L15.0074 6.25421C14.9126 7.51597 15.1358 8.75453 14.7512 9.98219C13.278 14.6868 6.39287 14.7421 4.83315 10.0599C4.41627 8.8091 4.64772 7.54325 4.55225 6.25421L0.609352 4.75034C0.00359716 4.42637 0.0406841 3.5411 0.687647 3.29352L9.52122 0L10.0789 0.0102304L19.0478 3.374C19.3081 3.55951 19.3871 3.77299 19.4138 4.08331C19.2971 5.97458 19.5629 8.03568 19.4138 9.90716C19.3596 10.5844 18.7854 11.1437 18.1268 10.7195C18.0389 10.6629 17.7635 10.3443 17.7635 10.2625V5.2339H17.7642ZM16.2182 4.00897L9.75817 1.66279L3.34074 4.03421L9.79732 6.44723C11.8323 5.62538 13.9387 4.96791 15.9744 4.14879C16.0437 4.12082 16.2065 4.08604 16.2189 4.00897H16.2182ZM13.3343 6.86736C12.1324 7.24929 10.9814 7.80992 9.76298 8.12434L6.22597 6.86736V8.93527C6.22597 9.21149 6.54671 9.94399 6.69986 10.2018C8.08582 12.5412 11.561 12.5071 12.8975 10.1363C13.0362 9.89011 13.3343 9.19376 13.3343 8.93596V6.86804V6.86736Z" fill="white"/><path d="M17.9891 23.1346C17.8675 23.0207 17.783 22.8324 17.7652 22.6674C17.6835 21.9178 17.8229 21.0325 17.7672 20.2659C17.6368 18.4633 16.1038 17.1279 14.5551 16.4043C14.2584 16.2658 13.3731 15.89 13.0902 15.8594C13.0325 15.8532 12.9899 15.8532 12.9473 15.8989C12.2976 16.4643 11.7028 17.2568 11.0414 17.7902C10.641 18.1128 10.1232 18.2976 9.60123 18.2505C8.38904 18.1414 7.46598 16.5489 6.55117 15.8594C4.49902 16.3634 1.9723 17.9204 1.79785 20.2175C1.74222 20.9534 1.92353 22.102 1.78549 22.7581C1.63096 23.4926 0.464778 23.6058 0.215471 22.8058C0.0266017 22.2015 0.145418 20.0518 0.275909 19.3725C0.747738 16.9254 3.6522 14.8356 5.988 14.3132C7.71804 13.9258 8.43917 15.6425 9.5978 16.5687C9.70494 16.6451 9.85878 16.6444 9.96455 16.5687C10.6143 16.0019 11.2083 15.2148 11.8663 14.676C12.6595 14.0267 13.3566 14.2198 14.2378 14.5233C16.5935 15.3342 19.0413 17.1982 19.3613 19.809C19.4492 20.5272 19.4842 21.7957 19.4066 22.5078C19.3242 23.2689 18.5674 23.6788 17.9891 23.1346Z" fill="white"/></svg>
-                    <span>Basic Profile</span>
-                </h2>
+            <div class="space-y-10 divide-y divide-zinc-700">
                 <!-- FORM -->
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 py-10">
-                    <!-- PICTURE CHANGE -->
-                    <div class="w-full flex justify-center">
-                        <div class="w-20 h-20 md:w-32 md:h-32 flex justify-center items-center bg-white rounded-full">
-                            <svg class="w-6 md:w-10" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.7642 5.2339L15.0074 6.25421C14.9126 7.51597 15.1358 8.75453 14.7512 9.98219C13.278 14.6868 6.39287 14.7421 4.83315 10.0599C4.41627 8.8091 4.64772 7.54325 4.55225 6.25421L0.609352 4.75034C0.00359716 4.42637 0.0406841 3.5411 0.687647 3.29352L9.52122 0L10.0789 0.0102304L19.0478 3.374C19.3081 3.55951 19.3871 3.77299 19.4138 4.08331C19.2971 5.97458 19.5629 8.03568 19.4138 9.90716C19.3596 10.5844 18.7854 11.1437 18.1268 10.7195C18.0389 10.6629 17.7635 10.3443 17.7635 10.2625V5.2339H17.7642ZM16.2182 4.00897L9.75817 1.66279L3.34074 4.03421L9.79732 6.44723C11.8323 5.62538 13.9387 4.96791 15.9744 4.14879C16.0437 4.12082 16.2065 4.08604 16.2189 4.00897H16.2182ZM13.3343 6.86736C12.1324 7.24929 10.9814 7.80992 9.76298 8.12434L6.22597 6.86736V8.93527C6.22597 9.21149 6.54671 9.94399 6.69986 10.2018C8.08582 12.5412 11.561 12.5071 12.8975 10.1363C13.0362 9.89011 13.3343 9.19376 13.3343 8.93596V6.86804V6.86736Z" fill="black"/><path d="M17.9891 23.1346C17.8675 23.0207 17.783 22.8324 17.7652 22.6674C17.6835 21.9178 17.8229 21.0325 17.7672 20.2659C17.6368 18.4633 16.1038 17.1279 14.5551 16.4043C14.2584 16.2658 13.3731 15.89 13.0902 15.8594C13.0325 15.8532 12.9899 15.8532 12.9473 15.8989C12.2976 16.4643 11.7028 17.2568 11.0414 17.7902C10.641 18.1128 10.1232 18.2976 9.60123 18.2505C8.38904 18.1414 7.46598 16.5489 6.55117 15.8594C4.49902 16.3634 1.9723 17.9204 1.79785 20.2175C1.74222 20.9534 1.92353 22.102 1.78549 22.7581C1.63096 23.4926 0.464778 23.6058 0.215471 22.8058C0.0266017 22.2015 0.145418 20.0518 0.275909 19.3725C0.747738 16.9254 3.6522 14.8356 5.988 14.3132C7.71804 13.9258 8.43917 15.6425 9.5978 16.5687C9.70494 16.6451 9.85878 16.6444 9.96455 16.5687C10.6143 16.0019 11.2083 15.2148 11.8663 14.676C12.6595 14.0267 13.3566 14.2198 14.2378 14.5233C16.5935 15.3342 19.0413 17.1982 19.3613 19.809C19.4492 20.5272 19.4842 21.7957 19.4066 22.5078C19.3242 23.2689 18.5674 23.6788 17.9891 23.1346Z" fill="black"/></svg>
+                <div class="pt-10">
+                    <!-- HEADING -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+                        <h2 class="flex items-center space-x-3 text-lg">
+                            <svg class="w-4" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.7642 5.2339L15.0074 6.25421C14.9126 7.51597 15.1358 8.75453 14.7512 9.98219C13.278 14.6868 6.39287 14.7421 4.83315 10.0599C4.41627 8.8091 4.64772 7.54325 4.55225 6.25421L0.609352 4.75034C0.00359716 4.42637 0.0406841 3.5411 0.687647 3.29352L9.52122 0L10.0789 0.0102304L19.0478 3.374C19.3081 3.55951 19.3871 3.77299 19.4138 4.08331C19.2971 5.97458 19.5629 8.03568 19.4138 9.90716C19.3596 10.5844 18.7854 11.1437 18.1268 10.7195C18.0389 10.6629 17.7635 10.3443 17.7635 10.2625V5.2339H17.7642ZM16.2182 4.00897L9.75817 1.66279L3.34074 4.03421L9.79732 6.44723C11.8323 5.62538 13.9387 4.96791 15.9744 4.14879C16.0437 4.12082 16.2065 4.08604 16.2189 4.00897H16.2182ZM13.3343 6.86736C12.1324 7.24929 10.9814 7.80992 9.76298 8.12434L6.22597 6.86736V8.93527C6.22597 9.21149 6.54671 9.94399 6.69986 10.2018C8.08582 12.5412 11.561 12.5071 12.8975 10.1363C13.0362 9.89011 13.3343 9.19376 13.3343 8.93596V6.86804V6.86736Z" fill="white"/><path d="M17.9891 23.1346C17.8675 23.0207 17.783 22.8324 17.7652 22.6674C17.6835 21.9178 17.8229 21.0325 17.7672 20.2659C17.6368 18.4633 16.1038 17.1279 14.5551 16.4043C14.2584 16.2658 13.3731 15.89 13.0902 15.8594C13.0325 15.8532 12.9899 15.8532 12.9473 15.8989C12.2976 16.4643 11.7028 17.2568 11.0414 17.7902C10.641 18.1128 10.1232 18.2976 9.60123 18.2505C8.38904 18.1414 7.46598 16.5489 6.55117 15.8594C4.49902 16.3634 1.9723 17.9204 1.79785 20.2175C1.74222 20.9534 1.92353 22.102 1.78549 22.7581C1.63096 23.4926 0.464778 23.6058 0.215471 22.8058C0.0266017 22.2015 0.145418 20.0518 0.275909 19.3725C0.747738 16.9254 3.6522 14.8356 5.988 14.3132C7.71804 13.9258 8.43917 15.6425 9.5978 16.5687C9.70494 16.6451 9.85878 16.6444 9.96455 16.5687C10.6143 16.0019 11.2083 15.2148 11.8663 14.676C12.6595 14.0267 13.3566 14.2198 14.2378 14.5233C16.5935 15.3342 19.0413 17.1982 19.3613 19.809C19.4492 20.5272 19.4842 21.7957 19.4066 22.5078C19.3242 23.2689 18.5674 23.6788 17.9891 23.1346Z" fill="white"/></svg>
+                            <span>Basic Profile</span>
+                        </h2>
+                        <div class="w-full md:col-span-3">
+                            <p class="text-sm text-zinc-500">Account Created: Jan 2024</p>
+                        </div>
+                    </div>
+                    <!-- FORM -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+                        <!-- PICTURE CHANGE -->
+                        <div class="w-full flex justify-center pt-10 md:py-5">
+                            <div class="w-20 h-20 md:w-32 md:h-32 flex justify-center items-center bg-white rounded-full">
+                                <svg class="w-6 md:w-10" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.7642 5.2339L15.0074 6.25421C14.9126 7.51597 15.1358 8.75453 14.7512 9.98219C13.278 14.6868 6.39287 14.7421 4.83315 10.0599C4.41627 8.8091 4.64772 7.54325 4.55225 6.25421L0.609352 4.75034C0.00359716 4.42637 0.0406841 3.5411 0.687647 3.29352L9.52122 0L10.0789 0.0102304L19.0478 3.374C19.3081 3.55951 19.3871 3.77299 19.4138 4.08331C19.2971 5.97458 19.5629 8.03568 19.4138 9.90716C19.3596 10.5844 18.7854 11.1437 18.1268 10.7195C18.0389 10.6629 17.7635 10.3443 17.7635 10.2625V5.2339H17.7642ZM16.2182 4.00897L9.75817 1.66279L3.34074 4.03421L9.79732 6.44723C11.8323 5.62538 13.9387 4.96791 15.9744 4.14879C16.0437 4.12082 16.2065 4.08604 16.2189 4.00897H16.2182ZM13.3343 6.86736C12.1324 7.24929 10.9814 7.80992 9.76298 8.12434L6.22597 6.86736V8.93527C6.22597 9.21149 6.54671 9.94399 6.69986 10.2018C8.08582 12.5412 11.561 12.5071 12.8975 10.1363C13.0362 9.89011 13.3343 9.19376 13.3343 8.93596V6.86804V6.86736Z" fill="black"/><path d="M17.9891 23.1346C17.8675 23.0207 17.783 22.8324 17.7652 22.6674C17.6835 21.9178 17.8229 21.0325 17.7672 20.2659C17.6368 18.4633 16.1038 17.1279 14.5551 16.4043C14.2584 16.2658 13.3731 15.89 13.0902 15.8594C13.0325 15.8532 12.9899 15.8532 12.9473 15.8989C12.2976 16.4643 11.7028 17.2568 11.0414 17.7902C10.641 18.1128 10.1232 18.2976 9.60123 18.2505C8.38904 18.1414 7.46598 16.5489 6.55117 15.8594C4.49902 16.3634 1.9723 17.9204 1.79785 20.2175C1.74222 20.9534 1.92353 22.102 1.78549 22.7581C1.63096 23.4926 0.464778 23.6058 0.215471 22.8058C0.0266017 22.2015 0.145418 20.0518 0.275909 19.3725C0.747738 16.9254 3.6522 14.8356 5.988 14.3132C7.71804 13.9258 8.43917 15.6425 9.5978 16.5687C9.70494 16.6451 9.85878 16.6444 9.96455 16.5687C10.6143 16.0019 11.2083 15.2148 11.8663 14.676C12.6595 14.0267 13.3566 14.2198 14.2378 14.5233C16.5935 15.3342 19.0413 17.1982 19.3613 19.809C19.4492 20.5272 19.4842 21.7957 19.4066 22.5078C19.3242 23.2689 18.5674 23.6788 17.9891 23.1346Z" fill="black"/></svg>
+                            </div>
+                        </div>
+                        <!-- RIGHT -->
+                        <div class="w-full md:col-span-3 grid md:grid-cols-2 gap-5 md:py-5">
+                            <!-- SINGLE GROUP : FULL NAME -->
+                            <div class="w-full text-left md:col-span-2">
+                                <label for="full_name" class="text-sm text-zinc-400 pb-2">Full Name</label>
+                                <input type="text" id="full_name" class="w-full text-white bg-gray-secondary rounded-md p-3 mt-1" />
+                            </div>
+                            <!-- SINGLE GROUP : NRIC -->
+                            <div class="w-full text-left">
+                                <label for="nric" class="text-sm text-zinc-400 pb-2">NRIC</label>
+                                <input type="text" id="nric" class="w-full text-white bg-gray-secondary rounded-md p-3 mt-1" />
+                            </div>
+                            <!-- SINGLE GROUP : EMAIL -->
+                            <div class="w-full text-left">
+                                <label for="email" class="text-sm text-zinc-400 pb-2">Email Address</label>
+                                <input type="text" id="email" class="w-full text-white bg-gray-secondary rounded-md p-3 mt-1" />
+                            </div>
+                            <!-- SINGLE GROUP : POSTCODE -->
+                            <div class="w-full text-left">
+                                <label for="postcode" class="text-sm text-zinc-400 pb-2">Postcode</label>
+                                <input type="text" id="postcode" class="w-full text-white bg-gray-secondary rounded-md p-3 mt-1" />
+                            </div>
+                            <!-- SINGLE GROUP : PASSWORD -->
+                            <div class="w-full text-left">
+                                <label for="password" class="text-sm text-zinc-400 pb-2">Password</label>
+                                <input type="text" id="password" class="w-full text-white bg-gray-secondary rounded-md p-3 mt-1" />
+                            </div>
+                            <!-- SINGLE GROUP : PREFERRED LANGUAGE -->
+                            <div class="w-full text-left">
+                                <label for="password" class="text-sm text-zinc-400 pb-2">Preferred Language</label>
+                                <select name="" id="" class="w-full text-white bg-gray-secondary text-sm rounded-md px-3 py-3.5 mt-1">
+                                    <option value="">-- Select language</option>
+                                    <option>Indonesia</option>
+                                    <option>English</option>
+                                </select>
+                            </div>
+                            <!-- BUTTON SUBMIT -->
+                            <div class="w-full flex items-end pt-4">
+                                <a href="#" class="w-auto inline-flex justify-center items-center space-x-2 text-sm bg-white text-black border border-zinc-300 rounded-full px-10 py-3">
+                                    <span>Save Change</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- LINKED CHILDREN -->
+                <div class="w-full pt-10">
+                    <!-- HEADING -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+                        <h2 class="flex items-center space-x-3 text-lg">
+                            <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6C0.19126 11.281 1.7429 10.9322 1.79822 10.7659C1.80853 10.7352 1.84979 10.1951 1.84979 10.1182C1.85166 9.57428 1.71103 8.63829 1.24507 8.29714C1.03037 8.13953 0.162196 7.9483 0.435961 7.51778C0.553154 7.33423 1.37164 7.18239 1.61071 7.09591C1.30132 6.73458 1.06881 6.32231 0.9413 5.85624C0.583156 4.55314 0.628158 2.32366 2.23324 1.95464L16.0246 0L24.485 2.64175C24.9238 3.15875 23.9853 3.30579 23.7041 3.54507C23.0618 4.08995 23.1875 5.2537 23.1884 6.01288C23.465 6.15222 24.9988 6.54046 24.9998 6.872C25.0044 6.96233 24.9388 6.97194 24.8788 7.00077C24.696 7.08726 23.7228 7.25351 23.6788 7.29771C24.5676 8.5787 24.4185 11.0081 23.1912 12.0258C23.1875 12.1228 23.7547 12.1315 23.8166 12.3362C23.9572 12.8061 23.3628 12.8781 23.0984 13.0329C22.3334 13.4788 22.3493 14.8703 22.4646 15.6477C22.7909 15.7582 24.1194 16.1061 24.2094 16.4386C24.2375 16.5433 24.1869 16.5837 24.0969 16.6087L10.4715 20C7.87823 19.1063 5.25215 18.3039 2.65983 17.4063C1.27788 16.9277 0.509089 16.9056 0.130319 15.246L0.00093755 14.5032V13.5528C0.075004 13.252 0.116256 12.9579 0.236263 12.6677C0.346893 12.4005 0.510027 12.1766 0.684411 11.9518L0.00093755 11.7509V11.601L0 11.6ZM11.3237 5.94753L2.45263 3.00404C1.3482 2.84259 1.48789 4.9433 1.67353 5.60542C1.75041 5.8793 1.95479 6.31847 2.21074 6.45589L11.2281 9.04767L11.3237 5.94657V5.94753ZM11.7175 9.04863L22.7028 6.27234C22.8134 6.18778 22.7037 5.95714 22.7 5.8226C22.6775 5.06919 22.6625 4.33116 22.9943 3.64405L11.8178 5.99846L11.7184 9.04863H11.7175ZM13.7679 13.8526L22.8162 11.2426C23.5156 10.8226 23.5953 8.82472 23.24 8.17125C23.12 7.95022 22.9625 7.84355 22.7196 7.80031L13.6742 10.7553L13.767 13.8526H13.7679ZM13.1791 10.8015L2.00167 8.44801C2.33356 9.13511 2.31856 9.87411 2.29606 10.6266C2.29231 10.7611 2.18262 10.9917 2.29325 11.0763L13.2785 13.8526L13.1791 10.8024V10.8015ZM10.4959 18.6556L10.5456 15.5776L1.7204 12.6129C0.567218 12.4409 0.728476 14.4811 0.913173 15.1922C1.0013 15.5333 1.16256 15.838 1.44664 16.0465L10.4949 18.6556H10.4959ZM10.9853 18.6556L21.9218 15.8793C22.0502 15.7803 21.9227 15.3805 21.919 15.2297C21.8974 14.5205 21.9668 13.9131 22.2134 13.251L15.2324 14.7271C14.6098 14.8424 13.9976 15.3162 13.3657 15.1144L11.0884 15.6083L10.9862 18.6556H10.9853Z" fill="white"/></svg>                                
+                            <span>Subjects Enrolled</span>
+                        </h2>
+                    </div>
+                    <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-5 pt-5">
+                        <!-- LEFT -->
+                        <div class="w-full md:col-span-2 grid gap-5">
+                            <!-- SINGLE -->
+                            <div class="w-full md:col-span-2 bg-gray-secondary rounded-md px-4 py-3">
+                                <div class="w-full flex items-center space-x-3 lg:space-x-5">
+                                    <div class="w-12 min-w-12 h-12 lg:w-16 lg:min-w-16 lg:min-h-16 flex justify-center items-center bg-white rounded-full">
+                                        <svg class="w-4 lg:w-6" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.7642 5.2339L15.0074 6.25421C14.9126 7.51597 15.1358 8.75453 14.7512 9.98219C13.278 14.6868 6.39287 14.7421 4.83315 10.0599C4.41627 8.8091 4.64772 7.54325 4.55225 6.25421L0.609352 4.75034C0.00359716 4.42637 0.0406841 3.5411 0.687647 3.29352L9.52122 0L10.0789 0.0102304L19.0478 3.374C19.3081 3.55951 19.3871 3.77299 19.4138 4.08331C19.2971 5.97458 19.5629 8.03568 19.4138 9.90716C19.3596 10.5844 18.7854 11.1437 18.1268 10.7195C18.0389 10.6629 17.7635 10.3443 17.7635 10.2625V5.2339H17.7642ZM16.2182 4.00897L9.75817 1.66279L3.34074 4.03421L9.79732 6.44723C11.8323 5.62538 13.9387 4.96791 15.9744 4.14879C16.0437 4.12082 16.2065 4.08604 16.2189 4.00897H16.2182ZM13.3343 6.86736C12.1324 7.24929 10.9814 7.80992 9.76298 8.12434L6.22597 6.86736V8.93527C6.22597 9.21149 6.54671 9.94399 6.69986 10.2018C8.08582 12.5412 11.561 12.5071 12.8975 10.1363C13.0362 9.89011 13.3343 9.19376 13.3343 8.93596V6.86804V6.86736Z" fill="black"/><path d="M17.9891 23.1346C17.8675 23.0207 17.783 22.8324 17.7652 22.6674C17.6835 21.9178 17.8229 21.0325 17.7672 20.2659C17.6368 18.4633 16.1038 17.1279 14.5551 16.4043C14.2584 16.2658 13.3731 15.89 13.0902 15.8594C13.0325 15.8532 12.9899 15.8532 12.9473 15.8989C12.2976 16.4643 11.7028 17.2568 11.0414 17.7902C10.641 18.1128 10.1232 18.2976 9.60123 18.2505C8.38904 18.1414 7.46598 16.5489 6.55117 15.8594C4.49902 16.3634 1.9723 17.9204 1.79785 20.2175C1.74222 20.9534 1.92353 22.102 1.78549 22.7581C1.63096 23.4926 0.464778 23.6058 0.215471 22.8058C0.0266017 22.2015 0.145418 20.0518 0.275909 19.3725C0.747738 16.9254 3.6522 14.8356 5.988 14.3132C7.71804 13.9258 8.43917 15.6425 9.5978 16.5687C9.70494 16.6451 9.85878 16.6444 9.96455 16.5687C10.6143 16.0019 11.2083 15.2148 11.8663 14.676C12.6595 14.0267 13.3566 14.2198 14.2378 14.5233C16.5935 15.3342 19.0413 17.1982 19.3613 19.809C19.4492 20.5272 19.4842 21.7957 19.4066 22.5078C19.3242 23.2689 18.5674 23.6788 17.9891 23.1346Z" fill="black"/></svg>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <p class="text-sm text-zinc-100">Muhammad Amir Long Name Syamil Bin Muhammad Long Izzuddin</p>
+                                    </div>
+                                </div>
+                                <div class="w-full flex flex-row sm:flex-col lg:flex-row justify-between items-center space-y-2 lg:space-y-0 pt-5">
+                                    <p class="text-sm text-zinc-500">Form 5 (2025)</p>
+                                    <a href="#" class="w-auto inline-flex justify-center items-center space-x-2 text-sm bg-white text-black border border-zinc-300 rounded-full px-10 py-3">
+                                        <span>View Progress</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- RIGHT -->
+                        <div class="w-full">
+                            <!-- SINGLE -->
+                            <div class="w-full flex flex-col justify-center items-center space-y-3 hover:bg-gray-secondary border border-red-700 rounded-md px-4 py-3">
+                                <div class="w-14 h-14 flex justify-center items-center bg-white text-black rounded-full">
+                                    <iconify-icon icon="ic:round-plus" width="24" height="24"></iconify-icon>
+                                </div>
+                                <span class="text-sm text-white text-center">Link Another Child</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PREFERENCES -->
+                <div class="w-full pt-10">
+                    <!-- HEADING -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+                        <h2 class="flex items-center space-x-3 text-lg">
+                            <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6C0.19126 11.281 1.7429 10.9322 1.79822 10.7659C1.80853 10.7352 1.84979 10.1951 1.84979 10.1182C1.85166 9.57428 1.71103 8.63829 1.24507 8.29714C1.03037 8.13953 0.162196 7.9483 0.435961 7.51778C0.553154 7.33423 1.37164 7.18239 1.61071 7.09591C1.30132 6.73458 1.06881 6.32231 0.9413 5.85624C0.583156 4.55314 0.628158 2.32366 2.23324 1.95464L16.0246 0L24.485 2.64175C24.9238 3.15875 23.9853 3.30579 23.7041 3.54507C23.0618 4.08995 23.1875 5.2537 23.1884 6.01288C23.465 6.15222 24.9988 6.54046 24.9998 6.872C25.0044 6.96233 24.9388 6.97194 24.8788 7.00077C24.696 7.08726 23.7228 7.25351 23.6788 7.29771C24.5676 8.5787 24.4185 11.0081 23.1912 12.0258C23.1875 12.1228 23.7547 12.1315 23.8166 12.3362C23.9572 12.8061 23.3628 12.8781 23.0984 13.0329C22.3334 13.4788 22.3493 14.8703 22.4646 15.6477C22.7909 15.7582 24.1194 16.1061 24.2094 16.4386C24.2375 16.5433 24.1869 16.5837 24.0969 16.6087L10.4715 20C7.87823 19.1063 5.25215 18.3039 2.65983 17.4063C1.27788 16.9277 0.509089 16.9056 0.130319 15.246L0.00093755 14.5032V13.5528C0.075004 13.252 0.116256 12.9579 0.236263 12.6677C0.346893 12.4005 0.510027 12.1766 0.684411 11.9518L0.00093755 11.7509V11.601L0 11.6ZM11.3237 5.94753L2.45263 3.00404C1.3482 2.84259 1.48789 4.9433 1.67353 5.60542C1.75041 5.8793 1.95479 6.31847 2.21074 6.45589L11.2281 9.04767L11.3237 5.94657V5.94753ZM11.7175 9.04863L22.7028 6.27234C22.8134 6.18778 22.7037 5.95714 22.7 5.8226C22.6775 5.06919 22.6625 4.33116 22.9943 3.64405L11.8178 5.99846L11.7184 9.04863H11.7175ZM13.7679 13.8526L22.8162 11.2426C23.5156 10.8226 23.5953 8.82472 23.24 8.17125C23.12 7.95022 22.9625 7.84355 22.7196 7.80031L13.6742 10.7553L13.767 13.8526H13.7679ZM13.1791 10.8015L2.00167 8.44801C2.33356 9.13511 2.31856 9.87411 2.29606 10.6266C2.29231 10.7611 2.18262 10.9917 2.29325 11.0763L13.2785 13.8526L13.1791 10.8024V10.8015ZM10.4959 18.6556L10.5456 15.5776L1.7204 12.6129C0.567218 12.4409 0.728476 14.4811 0.913173 15.1922C1.0013 15.5333 1.16256 15.838 1.44664 16.0465L10.4949 18.6556H10.4959ZM10.9853 18.6556L21.9218 15.8793C22.0502 15.7803 21.9227 15.3805 21.919 15.2297C21.8974 14.5205 21.9668 13.9131 22.2134 13.251L15.2324 14.7271C14.6098 14.8424 13.9976 15.3162 13.3657 15.1144L11.0884 15.6083L10.9862 18.6556H10.9853Z" fill="white"/></svg>                                
+                            <span>Subscribe To New Subjects</span>
+                        </h2>
+                    </div>
+                    <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 pt-5 pb-20">
+                        <!-- SINGLE -->
+                        <div class="w-full rounded-lg bg-gray-secondary">
+                            <div class="relative">
+                                <div class="w-full h-48 rounded-lg overflow-hidden">
+                                    <img src="/asset/images/person-card-example.png" alt="" class="w-full object-cover" />
+                                    <div class="w-full absolute bottom-0 left-0 flex flex-col justify-end py-4 px-8">
+                                        <h2 class="text-lg uppercase font-semibold font-bebas">Add Math</h2>
+                                        <p class="text-xs">Form 2 (2025)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="p-3 pb-7">
+                                    <p class="text-white">Sir Fathi</p>
+                                    <div class="flex items-center space-x-2">
+                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.3944 2.41211H11.7088C12.4312 2.41211 13.0233 3.16802 13.0233 4.09192V12.7597C13.0233 13.6836 12.2674 14.4395 11.3435 14.4395H2.67987C1.75597 14.4395 1.00006 13.6836 1.00006 12.7597V4.09192C1.00006 3.16802 1.67618 2.41211 2.50349 2.41211H4.00692" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.25211 14.4387V12.2423C9.25211 11.3184 10.008 10.5625 10.9319 10.5625H13.0233" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.19531 2.41211H9.20586" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.00006 5.57422H13.0275" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.60418 1C4.93174 1 5.20051 1.26457 5.20051 1.59633V3.19635C5.20051 3.52391 4.93594 3.79268 4.60418 3.79268C4.27661 3.79268 4.00784 3.52811 4.00784 3.19635V1.59633C4.00784 1.26877 4.27241 1 4.60418 1Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.80144 3.78848C9.47388 3.78848 9.20511 3.52391 9.20511 3.19215V1.59633C9.20511 1.26877 9.46968 1 9.80144 1C10.129 1 10.3978 1.26457 10.3978 1.59633V3.19635C10.3978 3.52391 10.1332 3.79268 9.80144 3.79268V3.78848Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.0288 10.5625L9.14847 14.4387" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.62803 5.99414H12.6034V10.3843H10.4083L9.15397 11.6386V14.1472H2.56878L1.31445 13.2065L1.62803 5.99414Z" fill="white" stroke="white"/></svg>                                        
+                                        <span class="text-sm">Start Aug 5  |  14 day replay</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-1 bg-[#202020] rounded-b-lg p-3">
+                                    <h1 class="text-lg">RM123.45</h1>
+                                    <span class="text-zinc-500">/ month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SINGLE -->
+                        <div class="w-full rounded-lg bg-gray-secondary">
+                            <div class="relative">
+                                <div class="w-full h-48 rounded-lg overflow-hidden">
+                                    <img src="/asset/images/person-card-example.png" alt="" class="w-full object-cover" />
+                                    <div class="w-full absolute bottom-0 left-0 flex flex-col justify-end py-4 px-8">
+                                        <h2 class="text-lg uppercase font-semibold font-bebas">Add Math</h2>
+                                        <p class="text-xs">Form 2 (2025)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="p-3 pb-7">
+                                    <p class="text-white">Sir Fathi</p>
+                                    <div class="flex items-center space-x-2">
+                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.3944 2.41211H11.7088C12.4312 2.41211 13.0233 3.16802 13.0233 4.09192V12.7597C13.0233 13.6836 12.2674 14.4395 11.3435 14.4395H2.67987C1.75597 14.4395 1.00006 13.6836 1.00006 12.7597V4.09192C1.00006 3.16802 1.67618 2.41211 2.50349 2.41211H4.00692" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.25211 14.4387V12.2423C9.25211 11.3184 10.008 10.5625 10.9319 10.5625H13.0233" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.19531 2.41211H9.20586" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.00006 5.57422H13.0275" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.60418 1C4.93174 1 5.20051 1.26457 5.20051 1.59633V3.19635C5.20051 3.52391 4.93594 3.79268 4.60418 3.79268C4.27661 3.79268 4.00784 3.52811 4.00784 3.19635V1.59633C4.00784 1.26877 4.27241 1 4.60418 1Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.80144 3.78848C9.47388 3.78848 9.20511 3.52391 9.20511 3.19215V1.59633C9.20511 1.26877 9.46968 1 9.80144 1C10.129 1 10.3978 1.26457 10.3978 1.59633V3.19635C10.3978 3.52391 10.1332 3.79268 9.80144 3.79268V3.78848Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.0288 10.5625L9.14847 14.4387" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.62803 5.99414H12.6034V10.3843H10.4083L9.15397 11.6386V14.1472H2.56878L1.31445 13.2065L1.62803 5.99414Z" fill="white" stroke="white"/></svg>                                        
+                                        <span class="text-sm">Start Aug 5  |  14 day replay</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-1 bg-[#202020] rounded-b-lg p-3">
+                                    <h1 class="text-lg">RM123.45</h1>
+                                    <span class="text-zinc-500">/ month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SINGLE -->
+                        <div class="w-full rounded-lg bg-gray-secondary">
+                            <div class="relative">
+                                <div class="w-full h-48 rounded-lg overflow-hidden">
+                                    <img src="/asset/images/person-card-example.png" alt="" class="w-full object-cover" />
+                                    <div class="w-full absolute bottom-0 left-0 flex flex-col justify-end py-4 px-8">
+                                        <h2 class="text-lg uppercase font-semibold font-bebas">Add Math</h2>
+                                        <p class="text-xs">Form 2 (2025)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="p-3 pb-7">
+                                    <p class="text-white">Sir Fathi</p>
+                                    <div class="flex items-center space-x-2">
+                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.3944 2.41211H11.7088C12.4312 2.41211 13.0233 3.16802 13.0233 4.09192V12.7597C13.0233 13.6836 12.2674 14.4395 11.3435 14.4395H2.67987C1.75597 14.4395 1.00006 13.6836 1.00006 12.7597V4.09192C1.00006 3.16802 1.67618 2.41211 2.50349 2.41211H4.00692" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.25211 14.4387V12.2423C9.25211 11.3184 10.008 10.5625 10.9319 10.5625H13.0233" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.19531 2.41211H9.20586" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.00006 5.57422H13.0275" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.60418 1C4.93174 1 5.20051 1.26457 5.20051 1.59633V3.19635C5.20051 3.52391 4.93594 3.79268 4.60418 3.79268C4.27661 3.79268 4.00784 3.52811 4.00784 3.19635V1.59633C4.00784 1.26877 4.27241 1 4.60418 1Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.80144 3.78848C9.47388 3.78848 9.20511 3.52391 9.20511 3.19215V1.59633C9.20511 1.26877 9.46968 1 9.80144 1C10.129 1 10.3978 1.26457 10.3978 1.59633V3.19635C10.3978 3.52391 10.1332 3.79268 9.80144 3.79268V3.78848Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.0288 10.5625L9.14847 14.4387" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.62803 5.99414H12.6034V10.3843H10.4083L9.15397 11.6386V14.1472H2.56878L1.31445 13.2065L1.62803 5.99414Z" fill="white" stroke="white"/></svg>                                        
+                                        <span class="text-sm">Start Aug 5  |  14 day replay</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-1 bg-[#202020] rounded-b-lg p-3">
+                                    <h1 class="text-lg">RM123.45</h1>
+                                    <span class="text-zinc-500">/ month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SINGLE -->
+                        <div class="w-full rounded-lg bg-gray-secondary">
+                            <div class="relative">
+                                <div class="w-full h-48 rounded-lg overflow-hidden">
+                                    <img src="/asset/images/person-card-example.png" alt="" class="w-full object-cover" />
+                                    <div class="w-full absolute bottom-0 left-0 flex flex-col justify-end py-4 px-8">
+                                        <h2 class="text-lg uppercase font-semibold font-bebas">Add Math</h2>
+                                        <p class="text-xs">Form 2 (2025)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="p-3 pb-7">
+                                    <p class="text-white">Sir Fathi</p>
+                                    <div class="flex items-center space-x-2">
+                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.3944 2.41211H11.7088C12.4312 2.41211 13.0233 3.16802 13.0233 4.09192V12.7597C13.0233 13.6836 12.2674 14.4395 11.3435 14.4395H2.67987C1.75597 14.4395 1.00006 13.6836 1.00006 12.7597V4.09192C1.00006 3.16802 1.67618 2.41211 2.50349 2.41211H4.00692" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.25211 14.4387V12.2423C9.25211 11.3184 10.008 10.5625 10.9319 10.5625H13.0233" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.19531 2.41211H9.20586" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.00006 5.57422H13.0275" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.60418 1C4.93174 1 5.20051 1.26457 5.20051 1.59633V3.19635C5.20051 3.52391 4.93594 3.79268 4.60418 3.79268C4.27661 3.79268 4.00784 3.52811 4.00784 3.19635V1.59633C4.00784 1.26877 4.27241 1 4.60418 1Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.80144 3.78848C9.47388 3.78848 9.20511 3.52391 9.20511 3.19215V1.59633C9.20511 1.26877 9.46968 1 9.80144 1C10.129 1 10.3978 1.26457 10.3978 1.59633V3.19635C10.3978 3.52391 10.1332 3.79268 9.80144 3.79268V3.78848Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.0288 10.5625L9.14847 14.4387" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.62803 5.99414H12.6034V10.3843H10.4083L9.15397 11.6386V14.1472H2.56878L1.31445 13.2065L1.62803 5.99414Z" fill="white" stroke="white"/></svg>                                        
+                                        <span class="text-sm">Start Aug 5  |  14 day replay</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-1 bg-[#202020] rounded-b-lg p-3">
+                                    <h1 class="text-lg">RM123.45</h1>
+                                    <span class="text-zinc-500">/ month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SINGLE -->
+                        <div class="w-full flex flex-col justify-center items-center space-y-3">
+                            <button class="w-12 h-12 flex justify-center items-center bg-white rounded-full">
+                                <svg width="8" height="11" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L4 4.5L1 8" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>                                    
+                            </button>
+                            <span class="text-sm">View More</span>
                         </div>
                     </div>
                 </div>
